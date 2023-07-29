@@ -1,13 +1,118 @@
-body {
+*{
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-style: italic;
+}
+input,button{
+  width:100%;
+  padding:10px;
+  border-radius: 10px;
+  border: 1px solid gray;
+}
+label{
+  margin-top: 20px;
+}
+input:focus{
+  outline-color: rgb(157, 246, 69);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.form{
+  width:30%;
+  background-color: rgb(247, 246, 246);
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  padding: 60px 40px;
+}
+.form .welcome-msg{
+  color: rgb(168, 165, 165);
+}
+.form h1{
+  margin-top: 5px;
+}
+form div,button,p{
+  margin-top: 20px;
+}
+button{
+  background-color: blue;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+.p-center{
+  text-align: center;
+}
+.p-center a{
+  text-decoration: none;
+  color: blue;
+}
+
+.container{
+  background-color: rgb(201, 215, 215);
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.signup{
+  margin-top: 60px;
+}
+.profile{
+  width:40%;
+  margin:auto;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: rgba(232, 7, 7, 0.56) 0px 22px 70px 4px;
+}
+.profile p{
+  font-size: 20px;
+}
+.profile div{
+  text-align: center;
+}
+
+img{
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  width:100px;
+  border-radius:50%;
+}
+.name-p{
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+p span{
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.token{
+  overflow-wrap: break-word;
+}
+
+@media only screen and (max-width:1300px){
+  .profile{
+    width:70%;
+  }
+  .form{
+    width:50%;
+  }
+}
+@media only screen and (max-width:1000px){
+  .profile{
+    width:70%;
+  }
+  .form{
+    width:70%;
+  }
+}
+@media only screen and (max-width:700px){
+  .profile{
+    width:90%;
+  }
+  .form{
+    width:90%;
+  }
 }
